@@ -3,136 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Data Science Portfolio</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
-    <!-- GitHub Pages Analytics -->
-    <meta name="google-site-verification" content="your-verification-code" />
+    <title>Your Name - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin: 0;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            margin-top: 0.5rem;
+        }
+
+        section {
+            background: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-tag {
+            background: #e1f0ff;
+            color: #3498db;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .contact a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body class="bg-gray-100">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between">
-                <div class="flex space-x-7">
-                    <div>
-                        <a href="#" class="flex items-center py-4 px-2">
-                            <span class="font-semibold text-gray-800 text-lg">Your Name</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-3">
-                    <a href="#about" class="py-4 px-2 text-gray-500 hover:text-gray-900">About</a>
-                    <a href="#projects" class="py-4 px-2 text-gray-500 hover:text-gray-900">Projects</a>
-                    <a href="#contact" class="py-4 px-2 text-gray-500 hover:text-gray-900">Contact</a>
-                    <a href="blog.html" class="py-4 px-2 text-gray-500 hover:text-gray-900">Blog</a>
-                </div>
-            </div>
+<body>
+    <header>
+        <div class="container">
+            <h1>Your Name</h1>
+            <p class="subtitle">Data Science Student | Statistical Analysis</p>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section with GitHub Stats -->
-    <div class="bg-white">
-        <div class="max-w-6xl mx-auto px-4 py-16">
-            <div class="text-center">
-                <h1 class="text-4xl font-bold text-gray-800 mb-4">Data Science & Analytics Portfolio</h1>
-                <p class="text-xl text-gray-600 mb-8">Statistical Analysis • Machine Learning • Data Visualization</p>
-                <!-- GitHub Stats -->
-                <div class="flex justify-center space-x-4">
-                    <img src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=light" alt="GitHub Stats" class="shadow rounded-lg">
-                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact&theme=light" alt="Top Languages" class="shadow rounded-lg">
-                </div>
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>
+                Final year Statistics student passionate about data analytics and machine learning. 
+                Experienced in statistical analysis, data visualization, and predictive modeling.
+            </p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">R</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Statistical Analysis</span>
+                <span class="skill-tag">Data Visualization</span>
+                <span class="skill-tag">Tableau</span>
+                <span class="skill-tag">Power BI</span>
             </div>
-        </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <h3>Time Series Analysis Project</h3>
+            <p>
+                Analyzed stock market data using ARIMA models and Prophet, 
+                achieving 85% prediction accuracy.
+            </p>
+
+            <h3>Customer Segmentation Analysis</h3>
+            <p>
+                Implemented K-means clustering to identify distinct customer segments 
+                and created interactive visualizations.
+            </p>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <p>
+                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                <a href="mailto:your.email@example.com">Email</a>
+            </p>
+        </section>
     </div>
-
-    <!-- About Section -->
-    <section id="about" class="bg-gray-50 py-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8">About Me</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                    <p class="text-gray-600 mb-4">
-                        Final year Statistics student passionate about transforming data into actionable insights. 
-                        Specialized in statistical analysis, machine learning, and data visualization.
-                    </p>
-                    <div class="grid grid-cols-2 gap-4 mt-8">
-                        <div class="bg-white p-4 rounded-lg shadow">
-                            <h3 class="font-bold text-gray-800 mb-2">Technical Skills</h3>
-                            <ul class="text-gray-600">
-                                <li>Python (Pandas, NumPy)</li>
-                                <li>R Programming</li>
-                                <li>SQL</li>
-                                <li>Machine Learning</li>
-                            </ul>
-                        </div>
-                        <div class="bg-white p-4 rounded-lg shadow">
-                            <h3 class="font-bold text-gray-800 mb-2">Tools</h3>
-                            <ul class="text-gray-600">
-                                <li>Tableau</li>
-                                <li>Power BI</li>
-                                <li>Jupyter Notebook</li>
-                                <li>Git</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex justify-center items-center">
-                    <img src="images/profile.jpg" alt="Profile" class="rounded-full w-64 h-64 object-cover shadow-lg">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section with GitHub Integration -->
-    <section id="projects" class="py-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8">Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project Card Template -->
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <img src="images/project1.jpg" alt="Project 1" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-bold text-xl mb-2">Time Series Analysis</h3>
-                        <p class="text-gray-600 mb-4">
-                            Conducted time series analysis on stock market data using ARIMA models and Prophet.
-                        </p>
-                        <div class="flex space-x-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Python</span>
-                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Time Series</span>
-                        </div>
-                        <a href="https://github.com/yourusername/project-repo" class="text-blue-500 hover:text-blue-700">
-                            <i class="fab fa-github mr-2"></i>View on GitHub
-                        </a>
-                    </div>
-                </div>
-                <!-- Add more project cards as needed -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="bg-gray-50 py-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-gray-800 mb-8">Contact</h2>
-            <div class="flex justify-center space-x-6">
-                <a href="https://github.com/yourusername" class="text-gray-600 hover:text-gray-900">
-                    <i class="fab fa-github fa-2x"></i>
-                </a>
-                <a href="https://linkedin.com/in/yourusername" class="text-gray-600 hover:text-gray-900">
-                    <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <a href="mailto:your.email@example.com" class="text-gray-600 hover:text-gray-900">
-                    <i class="far fa-envelope fa-2x"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-white py-8">
-        <div class="max-w-6xl mx-auto px-4">
-            <p class="text-center text-gray-600">© 2025 Your Name. All rights reserved.</p>
-        </div>
-    </footer>
 </body>
 </html>
